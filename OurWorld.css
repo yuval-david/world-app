@@ -1,0 +1,201 @@
+/*******************************/
+/*********** TASK 2 ***********/
+/******** YUVAL DAVID *********/
+/******************************/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('./images/pic2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* main headline */
+h1 {
+    text-align: center;
+    padding: 25px;
+    text-shadow: blanchedalmond 2px 2px 4px;
+}
+
+/* Form design */
+form {
+    display: block;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    border: solid rgb(44, 10, 10) 1px;
+    box-shadow: rgb(44, 10, 10) 0 0 5px 3px;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: rgb(243, 214, 176);
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.9;
+    
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    color: rgb(44, 10, 10);
+    border: 1px solid rgb(44, 10, 10);
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+
+#all-btn {
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: rgb(44, 10, 10);
+    border-radius: 5px;
+    color: blanchedalmond;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+/* CONTIANER of big-container */
+.contain-countries {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* עיצוב הדיב הכולל את כל המדינות */
+.big-container {
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    
+}
+
+/* עיצוב הדיב לכל מדינה */
+.countryDiv {
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+    font-weight: bold;
+    color: blanchedalmond;
+    text-shadow: black 1px 1px 1px;
+    border-radius: 5px;
+    background-image: url('./images/pic1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    margin-bottom: 12x;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 25vw;
+    text-align: center;
+    opacity: 0.85;
+    
+    
+}
+
+/* עיצוב הכותרות של המאפיינים של כל מדינה */
+span {
+    text-decoration-line: underline;
+}
+
+.country-details {
+    /* display: inline-block; */
+    flex-grow: 1;
+    
+}
+
+.container-flag {
+    display: inline-block;
+    flex-grow: 1;
+    box-shadow: 0 0 2px 2px black ;
+    background-color: white;
+    margin: 15px;
+   
+}
+
+.container-flag img {
+    padding: 0;
+    margin: 0;
+}
+
+/* TOP BUTTON */
+
+#top-btn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    width: 60px;
+    height: 60px;
+  }
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 426px) {
+    .big-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .contain-countries {
+        text-align: center;
+        margin-top: 50px;
+        
+    }
+
+    .countryDiv {
+        display: flex;
+        display: inline-block;
+        padding: 10px;
+        margin-bottom: 12x;
+        margin-top: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 70vw;
+        text-align: center;
+        opacity: 0.85;  
+    }
+
+    form {
+        display: block;
+        margin: auto;
+        width: 60vw;
+        text-align: center;
+        border: solid rgb(44, 10, 10) 1px;
+        box-shadow: rgb(44, 10, 10) 0 0 5px 3px;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: rgb(243, 214, 176);
+        font-size: 18px;
+        
+    }
+
+    #top-btn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 10px; /* Place the button at the bottom of the page */
+        right: 10px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        width: 40px;
+        height: 40px;
+      }
+}
+
